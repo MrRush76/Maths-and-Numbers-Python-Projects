@@ -19,7 +19,7 @@ def spin(credits):
     os.system('cls' if os.name == 'nt' else 'clear')
     icons = ['🍒', '🍋', '🍉', '🍇', '💀' , '🔔']
     result = [random.choice(icons) for _ in range(3)]
-    print(result)
+    print(" ".join(result))
     cherry_count = result.count('🍒')
     if cherry_count > 0:
       print(f"You win {20 * cherry_count} credits")
